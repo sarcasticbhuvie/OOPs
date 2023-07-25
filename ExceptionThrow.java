@@ -9,6 +9,8 @@ public class ExceptionThrow {
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter our Age : ");
        int age =sc.nextInt();
+       try{
+        
         if(age<18)
         {
             throw new ThrowEx("You are not worthy to vote");
@@ -17,6 +19,12 @@ public class ExceptionThrow {
         {
             System.out.println("you can vote");
         }
-        System.out.println("------end of program=-------");//it will execute when exception does not occurs
-    }
+       }
+       catch(ThrowEx e){
+        System.out.println(e);
+       }
+        System.out.println("------end of program=-------");
+        //condition 1. when exception not handled then it will execute when exception does not occurs 
+        //condition 2. when exception handles then it will always execute
+        }
 }
