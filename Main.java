@@ -11,6 +11,11 @@ class Main {
        Animal dog=new Animal();
        dog.init("Zaikie",3); 
        dog.display();
+       Animal cow=new Animal();
+       cow.init("Rani",5);
+       cow.display();       
+       cow.display();
+
     }
 }
 class Bird{
